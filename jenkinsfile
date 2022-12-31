@@ -1,9 +1,9 @@
 node{
 
-stage('clone of java project') {
+stage('clone of vertex java project') {
  git branch: 'main', url: 'https://github.com/balla1234/project01.git'
 }
-stage('build vertex maven project') {
+stage('build maven vertex project') {
  sh 'mvn install'
 }
 }
